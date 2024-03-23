@@ -12,7 +12,7 @@ public class AppController {
 		return "homepage";
 	}
 
-	@RequestMapping("addingEmployee")
+	@RequestMapping("/addingEmployee")
 	public String addEmployee() {
 
 		return "add-employee";
