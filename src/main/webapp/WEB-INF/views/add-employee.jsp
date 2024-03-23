@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@page isELIgnored="false" %>
+    <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+    
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -77,6 +80,12 @@
                         <div class="card-header text-center">
                             <h3>Add Employee</h3>
                         </div>
+                        <c:if test="${not empty msg}">
+                        <div class="bg-warning text-black text-center pt-2 rounded">
+                        	<h5>${msg }</h5>
+                        </div>
+                        	<c:remove var="msg"/>
+                        </c:if>
                         <div class="card-body">
                             <form action="employeeAdded" method="post">
                                 <div class="mb-3">

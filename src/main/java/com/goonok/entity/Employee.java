@@ -1,9 +1,18 @@
 package com.goonok.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
+@Entity
+@Table(name = "orm_practice_registraion")
 public class Employee {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String name;
 	private String email;
@@ -13,6 +22,8 @@ public class Employee {
 	private int salary;
 	private String address;
 	private String password;
+	
+	@Transient
 	private String checkbox;
 	
 	public int getId() {

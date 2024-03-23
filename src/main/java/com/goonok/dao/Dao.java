@@ -8,7 +8,7 @@ public interface Dao {
 
 	public int register(Employee employee);
 	
-	public void update(int id);
+	public void update(Employee employee);
 
 	public Employee getEmployeeById(int id);
 	
