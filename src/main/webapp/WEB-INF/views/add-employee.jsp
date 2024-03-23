@@ -78,51 +78,50 @@
                             <h3>Add Employee</h3>
                         </div>
                         <div class="card-body">
-                            <form action="#" method="post">
+                            <form action="employeeAdded" method="post">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Employee Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter Employee Full Name">
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Enter Employee Full Name">
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="from-label">Email Address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter employee email address">
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Enter employee email address">
                                 </div>
                                 <div class="mb-3">
                                     <label for="phone" class="form-label">Phone No</label>
-                                    <input type="tel" class="form-control" id="phone" placeholder="Enter Employee phone number" maxlength="11" minlength="11">
+                                    <input name=phone type="tel" class="form-control" id="phone" placeholder="Enter Employee phone number" maxlength="11" minlength="11">
                                 </div>
                                 <div class="mb-3">
                                     <label for="dob" class="form-label">Date of Birth</label>
-                                    <input type="date" class="form-control" id="dob">
+                                    <input name="dob" type="date" class="form-control" id="dob">
                                 </div>
                                 <div class="mb-3">
                                     <label for="designation" class="form-label">Designation</label>
-                                    <input type="text" class="form-control" id="designation" placeholder="Enter Designation">
+                                    <input  name="designation" type="text" class="form-control" id="designation" placeholder="Enter Designation">
                                 </div>
                                 <div class="mb-3">
                                     <label for="salary" class="form-label">Enter Salary</label>
-                                    <input type="number" name="salary" id="salary" class="form-control" placeholder="Enter Salary">
+                                    <input name="salary" type="number" name="salary" id="salary" class="form-control" placeholder="Enter Salary">
                                 </div>
                                 
                                 <div class="mb-3">
                                     <label for="address" class="form-label">Enter Address</label>
-                                    <input class="form-control" name="address" id="address" placeholder="Enter address"></input>
+                                    <input  name="address" class="form-control" name="address" id="address" placeholder="Enter address"></input>
                                 </div>
 
 
                                 <div class="mb-3">
                                     <label for="Password" class="form-label">Enter Password</label>
-                                    <input type="password" class="form-control" id="password" placeholder="Enter new password">
+                                    <input  name="Password" type="password" class="form-control" id="password" placeholder="Enter new password">
                                 </div>
                                 <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="terms-and-condition">
-                                    <label for="terms-and-condition" class="form-check-label">I Agreed on Terms and Condition</label>
+                                    <input  name="checkbox" type="checkbox" class="form-check-input" id="terms-and-condition">
+                                    <label  for="terms-and-condition" class="form-check-label">I Agreed on Terms and Condition</label>
                                 </div>
 
                                 <div class="mt-1 text-center">
                                     <button type="submit" class="btn btn-outline-warning btn-success mb-2" >Add Employee</button>
                                 </div>
-
                             </form>    
                         </div>
                     </div>

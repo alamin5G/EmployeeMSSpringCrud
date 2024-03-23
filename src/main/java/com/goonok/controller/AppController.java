@@ -1,7 +1,11 @@
 package com.goonok.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.goonok.entity.Employee;
 
 @Controller
 public class AppController {
@@ -13,8 +17,14 @@ public class AppController {
 	}
 
 	@RequestMapping("/addingEmployee")
-	public String addEmployee() {
+	public String addingEmployee() {
 
 		return "add-employee";
+	}
+	
+	@RequestMapping(path = "/employeeAdded", method = RequestMethod.POST)
+	public String addEmployee(@ModelAttribute Employee employee) {
+		System.out.println(employee);
+		return "redirect:/addingEmployee";
 	}
 }
